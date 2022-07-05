@@ -32,26 +32,33 @@ function promptQuestions() {
                 if (projectDesc) {
                     return true;
                 } else {
-                    console.log('You need to enter a project description');
+                    console.log('You need to enter a project description!');
                     return false;
                 }
             }
-
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'Describe the installation process if any: '
+            message: 'Describe the installation process if any'
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'What is the usage of this project?'
+            message: 'What is the usage of this project? (Required)',
+            validate: usage => {
+                if (usage) {
+                    return true;
+                } else {
+                    console.log('You need to enter the usage of this project');
+                    return false;
+                }
+            }
         },
         {
             type: 'list',
             name: 'license',
-            message: 'Choose the correct license for this project: ',
+            message: 'Choose the correct license for this project',
             choices: [
                 'Apache',
                 'Academic',
@@ -65,7 +72,15 @@ function promptQuestions() {
         {
             type: 'input',
             name: 'contributors',
-            message: 'Who are the contributors of this project?'
+            message: 'Who are the contributors of this project? (Required)',
+            validate: contributors => {
+                if (contributors) {
+                    return true;
+                } else {
+                    console.log('You need to enter the projects contributors!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
@@ -75,17 +90,33 @@ function promptQuestions() {
         {
             type: 'input',
             name: 'questions',
-            message: 'What do I do if I have an issue? '
+            message: 'What do I do if I have an issue?'
         },
         {
             type: 'input',
             name: 'username',
-            message: 'Please enter your github username: '
+            message: 'Please enter your github username (Required)',
+            validate: userName => {
+                if (userName) {
+                    return true;
+                } else {
+                    console.log('You need to enter your GitHub username!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Please enter your email: '
+            message: 'Please enter your email (Required)',
+            validate: email => {
+                if (email) {
+                    return true;
+                } else {
+                    console.log('You need to enter your email!');
+                    return false;
+                }
+            }
         }
     ]);
 }
