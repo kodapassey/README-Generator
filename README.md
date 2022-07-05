@@ -2,6 +2,11 @@
 
   ## Description
   This is a README.md file generator that when ran in a terminal will produce every aspect of a README file that you will need including description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. This project was built with JavaScript, Node.js and the inquirer package from NPM. Clone this repository and run 'node index.js' in the terminal to generate your own README.
+  
+  ## Video
+  Below is a video showing the process of generating the README.
+ 
+https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53-b472-5ff816613279.mp4
 
   
 
