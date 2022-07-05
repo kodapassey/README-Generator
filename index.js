@@ -14,12 +14,29 @@ function promptQuestions() {
         {
             type: 'input',
             name: 'projectTitle',
-            message: 'What is the name of your project?'
+            message: 'What is the name of your project? (Required)',
+            validate: projectName => {
+                if (projectName) {
+                    return true;
+                } else {
+                    console.log('You need to enter a project name!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Give a brief description of your project: '
+            message: 'Give a brief description of your project (Required)',
+            validate: projectDesc => {
+                if (projectDesc) {
+                    return true;
+                } else {
+                    console.log('You need to enter a project description');
+                    return false;
+                }
+            }
+
         },
         {
             type: 'input',
@@ -73,24 +90,43 @@ function promptQuestions() {
     ]);
 }
 
-    .then((answers) => {
-    // Use user feedback for... whatever!!
-})
-    .catch((error) => {
-        if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
-        } else {
-            // Something else went wrong
-        }
-    });
 
+// Async function using util.promisify 
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await promptQuestions();
+        const generateContent = generateMarkdown(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('✔️  Successfully wrote to README.md');
+    } catch (err) {
+        console.log(err);
+    }
+}
 
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
 init();
+
+//     .then((answers) => {
+//     // Use user feedback for... whatever!!
+// })
+//     .catch((error) => {
+//         if (error.isTtyError) {
+//             // Prompt couldn't be rendered in the current environment
+//         } else {
+//             // Something else went wrong
+//         }
+//     });
+
+
+
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+//     await writeFileAsync('./dist/README.md', ge)
+// }
+
+// // TODO: Create a function to initialize app
+// function init() { }
+
+// // Function call to initialize app
+// init();
