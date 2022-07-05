@@ -1,39 +1,30 @@
+  <h1 align = 'center'>README Generator</h1>
 
-  <h1 align = 'center'>README Generator 👋</h1>
+  ## Description
+  This is a README.md file generator that when ran in a terminal will produce every aspect of a README file that you will need including description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. This project was built with JavaScript, Node.js and the inquirer package from NPM.
 
-  #Description
-  README Generator that will generate all aspects of a README.md file that you will need in a project
-
-  #Table of Contents
+  ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
 
-  #Installation
-  💾 N/A
+  ## Installation
+  💾 
   
   ## Usage
-  💻 To generate perfect README files
+  💻 The usage of this project is to provide the user an easy and efficient way to create high quality README files that they can use for and assignment or project. The purpose is to give the user more time to spend on their actual project rather than wasting time on the README
 
   ## License
   ![badge](https://img.shields.io/badge/license-Open-brightgreen)
   <br />
   This application is covered by the Open license. 
 
-  ## Contributing
-  👪 undefined
-
-  ## Tests
-  ✏️ undefined
-
   ## Questions
-  ✋ email me<br />
+  ✋ <br />
   <br />
   :octocat: Find me on GitHub: [kodapassey](https://github.com/kodapassey)<br />
   <br />
   ✉️ Email me with any questions: kodapassey@charter.net<br /><br />
-  _This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
+  This README was generated with [README-generator](https://github.com/kodapassey/README-Generator) by [kodapassey](https://github.com/kodapassey)
