@@ -19,12 +19,12 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
   - [Questions](#questions)
 
   ## Installation
-  💾 npm init
+  npm init
 
 npm install inquirer
   
   ## Usage
-  💻 The usage of this project is to provide the user an easy and efficient way to create high quality README files that they can use for and assignment or project. The purpose is to give the user more time to spend on their actual project rather than wasting time on the README
+  The usage of this project is to provide the user an easy and efficient way to create high quality README files that they can use for and assignment or project. The purpose is to give the user more time to spend on their actual project rather than wasting time on the README
 
   ## License
   ![badge](https://img.shields.io/badge/license-Open-brightgreen)
@@ -32,10 +32,10 @@ npm install inquirer
   This application is covered by the Open license. 
 
   ## Contributing
-  👪 [kodapassey](https://github.com/kodapassey)
+  [kodapassey](https://github.com/kodapassey)
 
   ## Questions
   :octocat: Find me on GitHub: [kodapassey](https://github.com/kodapassey)<br />
   <br />
-  ✉️ Email me with any questions: kodapassey@charter.net<br /><br />
+  Email me with any questions: kodapassey@charter.net<br /><br />
   This README was generated with [README-generator](https://github.com/kodapassey/README-Generator) by [kodapassey](https://github.com/kodapassey)
