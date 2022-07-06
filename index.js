@@ -1,9 +1,17 @@
 // TODO: Include packages needed for this application
 // all the packages I need for this project
 const fs = require("fs");
+
+// require for util folder
 const util = require("util");
+
+// require function for inquirer package which gives me question prompts
 const inquirer = require("inquirer");
+
+// require function for my generateMarkdown module
 const generateMarkdown = require("./utils/generateMarkdown")
+
+// promisify function that writes README file
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -144,14 +152,22 @@ function promptQuestions() {
 
 
 // Async function using util.promisify 
+// this function generates README file
 async function init() {
+
     try {
         // Ask user questions and generate responses
         const answers = await promptQuestions();
+
+        // variable linking to generateMarkdown function which is created in generateMarkdown file
         const generateContent = generateMarkdown(answers);
         // Write new README.md to dist directory
+
+        // await function to write README file into dist folder
         await writeFileAsync('./dist/README.md', generateContent);
-        console.log('✔️  Successfully wrote to README.md');
+        console.log('Successfully generated README.md to dist folder!');
+
+        // error function to catch any error and console.log the error
     } catch (err) {
         console.log(err);
     }

@@ -8,8 +8,6 @@
  
 https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53-b472-5ff816613279.mp4
 
-  
-
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -19,9 +17,8 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
   - [Questions](#questions)
 
   ## Installation
-  npm init
-
-npm install inquirer
+  'npm init'
+  'npm install inquirer'
   
   ## Usage
   The usage of this project is to provide the user an easy and efficient way to create high quality README files that they can use for and assignment or project. The purpose is to give the user more time to spend on their actual project rather than wasting time on the README
