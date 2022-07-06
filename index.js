@@ -2,7 +2,6 @@
 // all the packages I need for this project
 const fs = require("fs");
 
-// require for util folder
 const util = require("util");
 
 // require function for inquirer package which gives me question prompts
