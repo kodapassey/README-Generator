@@ -16,10 +16,10 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Installation
-  💾 ${data.installation}
+  ${data.installation}
   
   ## Usage
-  💻 ${data.usage}
+  ${data.usage}
 
   ## License
   ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
@@ -27,17 +27,17 @@ function generateMarkdown(data) {
   This application is covered by the ${data.license} license. 
 
   ## Contributing
-  👪 ${data.contributing}
+  ${data.contributing}
 
   ## Tests
-  ✏️ ${data.tests}
+  ${data.tests}
 
   ## Questions
-  ✋ ${data.questions}<br />
+  ${data.questions}<br />
   <br />
   :octocat: Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
   <br />
-  ✉️ Email me with any questions: ${data.email}<br /><br />
+  Email me with any questions: ${data.email}<br /><br />
   _This README was generated with [README-generator](https://github.com/kodapassey/README-Generator) by [kodapassey](https://github.com/kodapassey)
 `;
 }
